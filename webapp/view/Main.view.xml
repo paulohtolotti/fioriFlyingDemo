@@ -1,7 +1,30 @@
-<mvc:View controllerName="fioriflyingdemo.controller.Main"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="fioriflyingdemo.controller.Main" displayBlock="true">
     <Page id="page" title="{i18n>title}">
-        <content />
+        <headerContent>
+            <ToggleButton xmlns="sap.m"  id="themeBtn"  class="sapUiSmallMargin"
+            icon="sap-icon://dark-mode" iconFirst="true" pressed="false" press="toggleTheme"/>
+        </headerContent>
+        <content>
+        <ObjectListItem type="Active" title="Object list item" number="9999999999" numberUnit="eur" intro="On behalf of John Doe" id="item0">
+            
+            <attributes>
+            
+                <ObjectAttribute text="attribute text" id="attribute0"/>
+            
+            </attributes>
+            
+            <firstStatus>
+            
+                <ObjectStatus text="first status text" id="status0"/>
+            
+            </firstStatus>
+            
+            <secondStatus>
+            
+                <ObjectStatus text="second status text" id="status1"/>
+            
+            </secondStatus></ObjectListItem>
+            
+        </content>
     </Page>
 </mvc:View>
